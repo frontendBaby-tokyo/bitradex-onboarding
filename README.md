@@ -1,10 +1,10 @@
 # BitradeXオンボーディングガイド
 
-このリポジトリでは、国内取引所のGMOコインでXRPを購入し、Trust Walletを経由してBitradeXへ送金するまでの流れを説明します。
+このリポジトリでは、国内取引所のGMOコインでXRPを購入し、Trust Walletを経由してBitradeXへ送金してから、AiBotへ入金するまでの流れを説明します。
 
 ```text
-GMOコイン  →  Trust Wallet  →  BitradeX
-  XRP購入        一時保管          入金
+GMOコイン  →  Trust Wallet  →  BitradeX（現物）  →  AiBot（AI 360D）
+  XRP購入        一時保管              着金            AI商品へ入金
 ```
 
 > [!IMPORTANT]
@@ -38,6 +38,7 @@ GMOコイン  →  Trust Wallet  →  BitradeX
 4. GMOコインでXRPを購入する
 5. GMOコインからTrust WalletへXRPを送金する
 6. Trust WalletからBitradeXへXRPを送金する
+7. BitradeXのAiBot（AI 360D）へXRPを入金する
 
 ## 推奨する作業順
 
@@ -74,6 +75,15 @@ GMOコインの取引所（現物）を利用してXRPを購入します。
 BitradeXで入金情報を確認し、Trust WalletからXRPを送金します。着金後は、BitradeXの資産画面で残高を確認します。
 
 → [Trust WalletからBitradeXにXRPを送金する手順](docs/TrustからBitradeXにXRPを送金する.md)
+
+### 7. BitradeXのAiBotへXRPを入金する
+
+BitradeXへ着金したXRPを、商品内容とリスクを確認してからAiBotのAI 360Dへ入金します。
+
+→ [BitradeXのAiBot（AI 360D）へ入金する手順](docs/AiBotに入金する.md)
+
+> [!WARNING]
+> AI 360Dは固定期間型の商品です。満期、途中解約、自動再投資、利回りなどの条件を、注文時の画面で必ず確認してください。
 
 ## 送金前の重要チェック
 
