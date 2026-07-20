@@ -1,0 +1,21 @@
+name: Markdown rendering check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check-strong-emphasis:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Reject unreliable Markdown bold syntax
+        shell: bash
+        run: |
+          if grep -RFn --include='*.md' '**' docs; then
+            echo 'Error: Use <strong>...</strong> instead of **...** in Japanese documentation.'
+            exit 1
+          fi
