@@ -17,7 +17,6 @@ GMOコイン  →  Trust Wallet  →  BitradeX
 ### スライド資料「日本円から海外取引所へXRPを送る」
 
 - [スライドで見る（PDF・全28ページ）](https://github.com/frontendBaby-tokyo/send-crypto-to-overseas-exchange/blob/master/slides-preview.pdf)
-- [内容をMarkdownで読む](https://github.com/frontendBaby-tokyo/send-crypto-to-overseas-exchange/blob/master/slides.md)
 
 このスライドでは、次の内容を初心者向けに説明しています。
 
